@@ -1,5 +1,5 @@
 find public -type f -not -name 'CNAME' -not -name 'README.md' -not -name '.git' -delete
-hugo
+hugo -D
 cd public
 git status
 git add .
