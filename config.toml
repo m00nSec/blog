@@ -1,3 +1,45 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://blog.moonsec.de"
+languageCode = "en-us"
+title = "m00nSec Blog"
+theme = "m10c"
+paginate = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  # Author
+  author = "Michael Oonk"
+  # Description
+  description = '\\ Security by curiosity //'
+  # Social links
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/m00nSec"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/m00nSec"
+  [[params.social]]
+    icon = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/michael-oonk-70383321a"
+
+[permalinks]
+  posts = "/:year/:month/:day/:title/"
+
